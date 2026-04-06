@@ -218,34 +218,49 @@ https://templatemo.com/tm-601-chain-summit
             <div class="register-content">
                 <section id="contact">
                     </section>
- 
+ <html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Section</title>
 <style>
-     {
-        .hero-image{
-            width: 200px;
-            height: auto;
-            border-radius: 50px;
-            display: block;
-            margin: 20px auto;
-        }
-        @media (max-width: 600px){
-            .hero-image {
-                width: 120px;
-            }
-        }
-        .contact-container {
-            max-width: 1000px !important;
-            margin: auto;
-            text-align:left;
-            display: grid !important;
-            grid-template-columns: 1fr 1fr !important;
-            gap: 30px;
-            padding: 20px;
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #0d0d0d;
+        color: #ffffff;
     }
 
-    .contact-info div,
-    .contact-form{
+    .contact-section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .contact-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #00ffcc;
+    }
+
+    .contact-section p {
+        color: #aaa;
+        margin-bottom: 40px;
+    }
+
+    .contact-container {
+        max-width: 900px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+
+    .contact-info div {
+        margin-bottom: 20px;
         padding: 15px;
         background: #1a1a1a;
         border-radius: 10px;
@@ -258,26 +273,30 @@ https://templatemo.com/tm-601-chain-summit
     }
 
     .contact-info h4 {
-        margin: 0 0 5px 0;
+        margin: 0;
         color: #00ffcc;
     }
 
     .contact-info p {
-        margin:  0;
+        margin: 5px 0 0;
         color: #ccc;
     }
 
+    .contact-form {
+        background: #1a1a1a;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
     .contact-form input,
-    .contact-form textarea,
-    .contact-form button{
-        width: 100% !important;
+    .contact-form textarea {
+        width: 100%;
         padding: 12px;
         margin-bottom: 15px;
         border: none;
         border-radius: 5px;
         background: #0d0d0d;
         color: #fff;
-        fond-size: 1rem;
     }
 
     .contact-form input:focus,
@@ -286,7 +305,11 @@ https://templatemo.com/tm-601-chain-summit
     }
 
     .contact-form button {
+        width: 100%;
+        padding: 12px;
         background: #00ffcc;
+        border: none;
+        border-radius: 5px;
         color: #000;
         font-weight: bold;
         cursor: pointer;
@@ -299,11 +322,7 @@ https://templatemo.com/tm-601-chain-summit
 
     @media (max-width: 768px) {
         .contact-container {
-            grid-template-columns: 1fr !important;
-            text-align:left;
-            width: 100%;
-            padding: spx;
-        }
+            grid-template-columns: 1fr;
         }
     }
 </style>
@@ -315,11 +334,14 @@ https://templatemo.com/tm-601-chain-summit
     <h2>Contact Me</h2>
     <p>Hey there! if you have questions about projects,coding,or need study help,just drop me a message I'll do my best to help!or just say hello 👋</p>
 
- <div class="contact-container">
-     <div class="contact-info">
+    <div class="contact-container">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div>
                 <h4>Email</h4>
-                <p>Email:<a href="mailto:sreyapullattu@gmail.com">sreyapullattu@gmail.com</a></p>
-     </div>
+                <p>Email:<a href="sreyapulattu@email.com">sreyapullattu@gmail.com</a></p>
+            </div>
             <div>
                 <h4>Location</h4>
                 <p>Kerala, India</p>
@@ -332,12 +354,22 @@ https://templatemo.com/tm-601-chain-summit
                 <h4>GitHub</h4>
                <p>GitHub:<a href="https://github.com/sreyapullattu-byte">https://github.com/sreyapullattu-byte</a></p> 
             </div>
-        
+        </div>
 
-    
-            
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
 
-</section>             
+    </div>
+</section>
+</body>
+</html>              
 
 <script src="templatemo-chain-scripts.js"></script>
 </body>
