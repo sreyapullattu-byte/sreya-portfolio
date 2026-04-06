@@ -224,17 +224,29 @@ https://templatemo.com/tm-601-chain-summit
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Section</title>
+<link rel="stylesheet"
+    href="templatemo-chain-summit.css">
 <style>
     body {
-
-
-    .contact-container {
-        max-width: 1000px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        padding: 20px;
+        .hero-image{
+            width: 200px;
+            height: auto;
+            border-radius: 50px;
+            display: block;
+            margin: 20px auto;
+        }
+        @media (max-width: 600px){
+            .hero-image {
+                width: 120px;
+            }
+        }
+        .contact-container {
+            max-width: 1000px !important;
+            margin: auto;
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            gap: 30px;
+            padding: 20px;
     }
 
     .contact-info div,
@@ -263,7 +275,7 @@ https://templatemo.com/tm-601-chain-summit
     .contact-form input,
     .contact-form textarea,
     .contact-form button{
-        width: 100%;
+        width: 100% !important;
         padding: 12px;
         margin-bottom: 15px;
         border: none;
@@ -292,7 +304,7 @@ https://templatemo.com/tm-601-chain-summit
 
     @media (max-width: 768px) {
         .contact-container {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr !important;
             gap: 20px;
         }
         }
